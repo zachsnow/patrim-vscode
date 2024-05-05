@@ -1,0 +1,19 @@
+{
+  "comments": {
+  // Line comments are actually implemented by the Patrim prelude, so if you are running with `--no-prelude`
+  // you will need to implement line comments yourself or your colorization will be incorrect.
+  "lineComment": "//"
+  },
+  "brackets": [
+    ["(", ")"],
+  ],
+  "autoClosingPairs": [
+    ["(", ")"],
+    ["\"", "\""]
+  ],
+  // symbols that can be used to surround a selection
+  "surroundingPairs": [
+    ["(", ")"],
+    ["\"", "\""]
+  ]
+}

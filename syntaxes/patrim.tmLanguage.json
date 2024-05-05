@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Quinix Lowlevel Language",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#storage"
+    },
+    {
+      "include": "#values"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{
+        "name": "comment.line.patrim",
+        "begin": "//",
+        "end": "\\n"
+      }]
+    },
+    "values": {
+      "patterns": [{
+        "name": "storage.type.patrim",
+        "match": "\\b(undefined|null|true|false)\\b"
+      }]
+    },
+    "keywords": {
+      "patterns": [{
+        "name": "keyword.control.patrim",
+        "match": "\\b(#add-rule|#remove-rule|#context|#global|#get|#set|#exit|#try|#throw)\\b"
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.double.patrim",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [{
+        "name": "constant.character.escape.qll",
+        "match": "\\\\[\"nt]"
+      }]
+    },
+    "numbers": {
+      "patterns": [{
+        "name": "constant.numeric.patrim",
+        "match": "\\b(-?[0-9]+)\\b"
+      }]
+    }
+  },
+  "scopeName": "source.patrim"
+}

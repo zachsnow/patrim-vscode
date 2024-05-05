@@ -1,0 +1,25 @@
+{
+    "name": "patrim-vscode",
+    "displayName": "Patrim",
+    "description": "Patrim Language Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "patrim",
+            "aliases": ["Patrim Term Rewriting Language", "patrim"],
+            "extensions": [".pat"],
+            "configuration": "./patrim-language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "patrim",
+            "scopeName": "source.patrim",
+            "path": "./syntaxes/patrim.tmLanguage.json"
+        }]
+    }
+}
