@@ -1,18 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Quinix Lowlevel Language",
+  "name": "Patrim Term Rewriting Language",
   "patterns": [
     {
       "include": "#comments"
     },
     {
-      "include": "#storage"
-    },
-    {
       "include": "#values"
-    },
-    {
-      "include": "#operators"
     },
     {
       "include": "#keywords"
@@ -22,6 +16,9 @@
     },
     {
       "include": "#numbers"
+    },
+    {
+      "include": "#registers"
     }
   ],
   "repository": {
@@ -34,14 +31,14 @@
     },
     "values": {
       "patterns": [{
-        "name": "storage.type.patrim",
+        "name": "constant.language.patrim",
         "match": "\\b(undefined|null|true|false)\\b"
       }]
     },
     "keywords": {
       "patterns": [{
-        "name": "keyword.control.patrim",
-        "match": "\\b(#add-rule|#remove-rule|#context|#global|#get|#set|#exit|#try|#throw)\\b"
+        "name": "keyword.operator.expression.patrim",
+        "match": "(?<=^|\\s|\\(|\\))(#[a-zA-Z0-9-_]+|::)(?=$|\\s|\\(|\\))"
       }]
     },
     "strings": {
@@ -56,7 +53,13 @@
     "numbers": {
       "patterns": [{
         "name": "constant.numeric.patrim",
-        "match": "\\b(-?[0-9]+)\\b"
+        "match": "\\b(-?[0-9]+)(:?\\.[0-9]+)\\b"
+      }]
+    },
+    "registers": {
+      "patterns": [{
+        "name": "entity.name.operator.custom-literal.patrim",
+        "match": "(?<=^|\\s|\\(|\\))(\\?|\\!)\\*?[a-zA-Z0-9-_\\.]+(:[a-zA-Z0-9-_]+)?(?=$|\\s|\\(|\\))"
       }]
     }
   },

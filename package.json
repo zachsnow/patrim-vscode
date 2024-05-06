@@ -6,6 +6,9 @@
     "engines": {
         "vscode": "^1.44.0"
     },
+    "scripts": {
+        "install": "./install.sh"
+    },
     "categories": [
         "Programming Languages"
     ],
