@@ -3,7 +3,7 @@
 _You speak the old tongue?_
 
 A [VS Code](https://code.visualstudio.com) extension that (barely) supports syntax highlighting for the
-[Patrim](https://patrim.vein.io) term rewriting language, built with the help of
+[Patrim](https://github.com/zachsnow/patrim) term rewriting language, built with the help of
 [Yeoman](https://yeoman.io/) and the
 [VS Code Extension Generator](https://code.visualstudio.com/api/get-started/your-first-extension).
 
