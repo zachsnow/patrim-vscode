@@ -13,6 +13,8 @@ Open the root of this repository in VS Code and hit `F5`. This will open a new
 VS Code window with the extension running. Then open a `.pat` file and
 have a look -- it should be colorized.
 
+Alternatively, run `pnpm run dev` to install the current working directory in VS Code.
+
 ## Installing from source
 
 To install the extension from source, first back-up your installed VS Code extensions
@@ -20,8 +22,9 @@ To install the extension from source, first back-up your installed VS Code exten
 of this repository:
 
 ```bash
-  $ ./install.sh
+  $ pnpm run install
 ```
 
 Then reload your VS Code window -- `.pat` files should now be colorized. (Note that this script
-will _not_ install uncommitted changes as it uses `git archive` under the hood.)
+will _not_ install uncommitted changes as it uses `git archive` under the hood. Use `pnpm run dev`
+to install uncommitted changes).

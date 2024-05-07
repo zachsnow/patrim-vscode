@@ -7,7 +7,8 @@
         "vscode": "^1.44.0"
     },
     "scripts": {
-        "install": "./install.sh"
+        "install": "./install.sh",
+        "dev": "./dev.sh"
     },
     "categories": [
         "Programming Languages"
