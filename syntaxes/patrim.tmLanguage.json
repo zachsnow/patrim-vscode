@@ -47,7 +47,7 @@
       "end": "\"",
       "patterns": [{
         "name": "constant.character.escape.patrim",
-        "match": "\\\\['\"\\bfnrtv0]"
+        "match": "\\\\['\\\"\\\\bfnrtv0]"
       }]
     },
     "numbers": {
