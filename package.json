@@ -10,7 +10,8 @@
   },
   "scripts": {
     "install": "./install.sh",
-    "dev": "./dev.sh"
+    "dev": "./dev.sh",
+    "package": "pnpm exec vsce package -o dist"
   },
   "categories": [
     "Programming Languages"

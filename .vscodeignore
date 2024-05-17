@@ -1,3 +1,4 @@
 node_modules/
 *.sh
 pnpm-lock.yaml
+dist/
