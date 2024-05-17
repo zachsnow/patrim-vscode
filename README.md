@@ -28,3 +28,5 @@ of this repository:
 Then reload your VS Code window -- `.pat` files should now be colorized. (Note that this script
 will _not_ install uncommitted changes as it uses `git archive` under the hood. Use `pnpm run dev`
 to install uncommitted changes).
+
+## Publishing
