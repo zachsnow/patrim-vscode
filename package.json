@@ -1,29 +1,49 @@
 {
-    "name": "patrim-vscode",
-    "displayName": "Patrim",
-    "description": "Patrim Language Support",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.44.0"
-    },
-    "scripts": {
-        "install": "./install.sh",
-        "dev": "./dev.sh"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "patrim-vscode",
+  "publisher": "zachsnow",
+  "displayName": "Patrim",
+  "description": "Patrim Language Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "scripts": {
+    "install": "./install.sh",
+    "dev": "./dev.sh"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "patrim",
+        "aliases": [
+          "Patrim Term Rewriting Language",
+          "patrim"
+        ],
+        "extensions": [
+          ".pat"
+        ],
+        "configuration": "./patrim-language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "patrim",
-            "aliases": ["Patrim Term Rewriting Language", "patrim"],
-            "extensions": [".pat"],
-            "configuration": "./patrim-language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "patrim",
-            "scopeName": "source.patrim",
-            "path": "./syntaxes/patrim.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "patrim",
+        "scopeName": "source.patrim",
+        "path": "./syntaxes/patrim.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachsnow/patrim-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zachsnow/patrim-vscode/issues"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.26.1"
+  }
 }
