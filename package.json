@@ -3,7 +3,7 @@
   "publisher": "zachsnow",
   "displayName": "Patrim",
   "description": "Patrim Language Support",
-  "icon": "icon.ico",
+  "icon": "icon.png",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.44.0"

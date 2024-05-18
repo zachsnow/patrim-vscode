@@ -2,8 +2,8 @@
 
 _You speak the old tongue?_
 
-A [VS Code](https://code.visualstudio.com) extension that (barely) supports syntax highlighting for the
-[Patrim](https://github.com/zachsnow/patrim) term rewriting language, built with the help of
+A [VS Code](https://code.visualstudio.com) extension that supports simple syntax highlighting for the
+[Patrim](https://patrim.vein.io) term rewriting language, built with the help of
 [Yeoman](https://yeoman.io/) and the
 [VS Code Extension Generator](https://code.visualstudio.com/api/get-started/your-first-extension).
 
@@ -29,4 +29,8 @@ Then reload your VS Code window -- `.pat` files should now be colorized. (Note t
 will _not_ install uncommitted changes as it uses `git archive` under the hood. Use `pnpm run dev`
 to install uncommitted changes).
 
-## Publishing
+## Packaging
+
+```bash
+$ pnpm run package
+```
